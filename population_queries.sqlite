@@ -1,0 +1,15 @@
+-- link : https://www.codecademy.com/practice/projects/world-populations-sql-practice
+-- This is the first query:
+Select * from population_years;
+
+-- Add your additional queries below:
+Select count(year) from population_years;
+Select max(population) FROM population_years WHERE country="Gabon";
+SELECT * FROM population_years WHERE year = 2005 ORDER BY population  LIMIT 10 ; 
+
+SELECT DISTINCT country FROM population_years WHERE year = 2010 AND  population > 100 ; 
+
+SELECT count(*) FROM population_years WHERE country like "%Islands%";
+
+SELECT population, year FROM population_years WHERE country = 'Indonesia' AND (year = 2010 OR year = 2000);
+  
